@@ -1,7 +1,7 @@
 Underscore-Grease
 =================
 
-###Making Underscore Chaining More Slick###
+###Making Underscore Chaining Slicker###
 
 In jQuery, chaining is nice and simple:
 
