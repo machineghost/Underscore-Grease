@@ -21,7 +21,7 @@ This allows you to chain as many methods as you want, without ever having to inv
 
     _(foo).without_({foo:bar}).compact_().flatten_().items();
 
-To use Underscore Grease simply download and add underscore.grease.js to your environment (or, for a production environment, use underscore.grease.min.js instead).  That's it.
+To use Underscore Grease simply download and add `underscore.grease.js` to your environment (or, for a production environment, use `underscore.grease.min.js` instead).  It's that simple.
 
 Underscore Grease was created by Jeremy Walker with feedback from GitHub user Nami-Doc. It is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
