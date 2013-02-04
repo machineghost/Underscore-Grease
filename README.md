@@ -1,4 +1,4 @@
-Underscore-Grease
+Underscore Grease
 =================
 
 ###Making Underscore Chaining Slicker###
