@@ -7,7 +7,7 @@
  *      _(foo).chain().method1().method2().value();
  *
  * This mix-in lightens that syntax to simply be:
- *      _(foo)._method1().method2();
+ *      _(foo).method1_().method2();
  * replacing .chain() and .value() with a single extra "_" (well, technically
  * one "_" per chained method).
  */
