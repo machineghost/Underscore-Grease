@@ -21,7 +21,6 @@ This allows you to chain as many methods as you want, without ever having to inv
 
     _(foo).without_({foo:bar}).compact_().flatten_().items();
 
-Underscore Grease was created by Jeremy Walker, with feedback from the GitHub user Nami-Doc, and is licensed under the MIT License.
+Underscore Grease was created by Jeremy Walker with feedback from GitHub user Nami-Doc. It is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
-For the historical origins of Underscore Grease see:
-https://github.com/documentcloud/underscore/issues/933
+For the historical origins of Underscore Grease see [this GitHub issue thread](https://github.com/documentcloud/underscore/issues/933)
