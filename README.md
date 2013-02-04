@@ -2,6 +2,7 @@ Underscore-Grease
 =================
 
 Making Underscore Chaining More Slick
+-------------------------------------
 
 In jQuery, chaining is nice and simple:
 
