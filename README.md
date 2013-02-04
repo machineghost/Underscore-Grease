@@ -11,7 +11,7 @@ Underscore however, unlike jQuery, contains a large number of methods that retur
 
      _(foo).chain().without({foo:bar}).compact().value();
 
-This mixing attempts to solve that problem with an alternative syntax:
+This mix-in attempts to solve that problem with an alternative syntax:
 
     _(foo).without_({foo:bar}).compact();
 
