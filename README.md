@@ -1,17 +1,19 @@
 Underscore Grease
 =================
 
+"Fun Underscore.js plugin that provides a cleaner way to do chaining … if chaining how you roll" - Jeremy Ashkenas, creator of Underscore.
+
 ###Making Underscore Chaining Slicker###
 
 In jQuery, chaining is nice and simple:
 
     $(someElement).css('color', 'red').show();
 
-Underscore however, unlike jQuery, contains a large number of methods that return values.  As a result, Underscore needs to specify when to return the actual result, and when to return the chainable version of it.  As a result of that, Underscore's chaining syntax isn't quite as simple as jQuery's:
+But while jQuery methods only rarely have return values, all Underscore methods do, which means that Underscore can't chain methods unless you tell it when to start/stop chaining.  Because of this, Underscore's chaining syntax isn't as simple as jQuery's:
 
      _(foo).chain().without({foo:bar}).compact().value();
 
-This mix-in attempts to solve that problem with an alternative syntax:
+This mix-in solves that problem by providing an alternative chaining syntax:
 
     _(foo).without_({foo:bar}).compact();
 
