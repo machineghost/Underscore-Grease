@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Underscore-grease by machineghost</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Underscore-grease</h1>
+        <p>Making Underscore Chaining More Slick</p>
+
+        <p class="view"><a href="https://github.com/machineghost/Underscore-Grease">View the Project on GitHub <small>machineghost/Underscore-Grease</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/machineghost/Underscore-Grease/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/machineghost/Underscore-Grease/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/machineghost/Underscore-Grease">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="underscore-grease" class="anchor" href="#underscore-grease" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Underscore Grease</h1>
+
+<p>"Fun Underscore.js plugin that provides a cleaner way to do chaining … if chaining how you roll" - Jeremy Ashkenas, creator of Underscore.</p>
+
+<h3>
+<a id="making-underscore-chaining-slicker" class="anchor" href="#making-underscore-chaining-slicker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making Underscore Chaining Slicker</h3>
+
+<p>In jQuery, chaining is nice and simple:</p>
+
+<pre><code>$(someElement).css('color', 'red').show();
+</code></pre>
+
+<p>But while jQuery methods only rarely have return values, all Underscore methods do, which means that Underscore can't chain methods unless you tell it when to start/stop chaining.  Because of this, Underscore's chaining syntax isn't as simple as jQuery's:</p>
+
+<pre><code> _(foo).chain().without({foo:bar}).compact().value();
+</code></pre>
+
+<p>This mix-in solves that problem by providing an alternative chaining syntax:</p>
+
+<pre><code>_(foo).without_({foo:bar}).compact();
+</code></pre>
+
+<p>In other words, this mix-in adds new versions of every method in Underscore (except chain; that would be pointless), and each of those new versions has a "_" at the end of the original method name.  When these "greased" versions of Underscore methods are called, they return an Underscore-wrapped version of whatever result their non-greased version would have returned.</p>
+
+<p>This allows you to chain as many methods as you want, without ever having to invoke either chain or value:</p>
+
+<pre><code>_(foo).without_({foo:bar}).compact_().flatten_().items();
+</code></pre>
+
+<p>To use Underscore Grease simply download and add <code>underscore.grease.js</code> to your environment (or, for a production environment, use <code>underscore.grease.min.js</code> instead).  It's that simple.</p>
+
+<p>Underscore Grease was created by Jeremy Walker with feedback from GitHub user Nami-Doc. It is licensed under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+
+<p>For the historical origins of Underscore Grease see <a href="https://github.com/documentcloud/underscore/issues/933">this GitHub issue thread</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/machineghost">machineghost</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
